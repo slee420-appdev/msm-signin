@@ -19,7 +19,7 @@ class Movie < ApplicationRecord
 
 
   has_many :bookmarks
-  has_many :bookmarkers, :through => :bookmarks, :source
+  #has_many :bookmarkers, :through => :bookmarks, :source
 
   validates(:title, { :presence => true })
 end
